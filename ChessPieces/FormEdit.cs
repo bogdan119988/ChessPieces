@@ -206,6 +206,7 @@ namespace ChessPieces
             if (OpenFileDialog.ShowDialog() == DialogResult.OK)
             {
                 imgPath = OpenFileDialog.FileName;
+
                 FileStream fs = new FileStream(imgPath, FileMode.Open);
                 Image img = new Bitmap(Image.FromStream(fs), new Size(140, 120));
                 fs.Close();
@@ -226,6 +227,12 @@ namespace ChessPieces
                     format = ImageFormat.Bmp;
                     break;
             }
+
+            if (!Directory.Exists(FormMain.imgPath))
+            {
+                Directory.CreateDirectory(FormMain.imgPath);
+            }
+
             pictureBoxImg.Image.Save(Path.Combine(FormMain.imgPath, Path.GetFileName(imgPath)), format);
         }
     }

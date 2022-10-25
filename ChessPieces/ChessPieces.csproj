@@ -107,7 +107,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="bin\Debug\ChessPieces.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,20 +127,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\ChessPieces.Domain.dll" />
-    <Content Include="bin\Debug\ChessPieces.Domain.pdb" />
-    <Content Include="bin\Debug\ChessPieces.exe" />
-    <Content Include="bin\Debug\ChessPieces.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\ChessPieces.pdb" />
-    <Content Include="bin\Debug\ChessPieces_log.ldf">
-      <DependentUpon>ChessPieces.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
     <Folder Include="Img\" />
   </ItemGroup>
   <ItemGroup>
